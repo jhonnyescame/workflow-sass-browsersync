@@ -1,12 +1,27 @@
 body{
-  margin: 10px;
-  background-color: blue;
+	background-color: #FFFFFF;
+}
+header{
+	margin: 0 auto;
+	width: 1040px;
+	background-color: #c0c0c0;
 }
 
-main section{
-  h1{
-    font-size: 50px;
-    color: #b3b3b3;
-    text-decoration: none;
-  }
+main{
+	margin: 0 auto;
+	width: 1040px;
+	background-color:#181818;
+	section{
+
+		article{
+			border-radius: 18px;
+			width: 500px;
+			height: 200px;
+			background-color:#363636;
+			p{
+				filter:blur(25px);
+			}
+		}
+	}
 }
+

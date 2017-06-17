@@ -10,12 +10,12 @@ gulp.task('default', ['sass', 'watch', 'browser-sync']);
 
 //Sass
 gulp.task('sass', function () {
-    .pipe(autoprefixer())
 	return gulp.src('assets/src/sass/**/*.scss')
 	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(autoprefixer())
 	.pipe(concat('style.css'))
     .pipe(gulp.dest('assets/css'))    
-    .pipe(browserSync.stream());	
+    .pipe(browserSync.reload({stream:true}));	
 });
 
 //browserSync
