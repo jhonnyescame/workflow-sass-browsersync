@@ -19,7 +19,10 @@ main{
 			height: 200px;
 			background-color:#363636;
 			p{
-				filter:blur(25px);
+				//filter:blur(25px);
+				&:hover{
+					  //  transform: rotate(90deg);
+				}
 			}
 		}
 	}

@@ -12,7 +12,7 @@ gulp.task('default', ['sass', 'watch', 'browser-sync']);
 gulp.task('sass', function () {
 	return gulp.src('assets/src/sass/**/*.scss')
 	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(autoprefixer())
+    .pipe(autoprefixer(browsers: ['last 5 versions'],))
 	.pipe(concat('style.css'))
     .pipe(gulp.dest('assets/css'))    
     .pipe(browserSync.reload({stream:true}));	
